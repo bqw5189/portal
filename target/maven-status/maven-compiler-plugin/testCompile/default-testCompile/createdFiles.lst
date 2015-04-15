@@ -1,0 +1,15 @@
+com/conten/portal/repository/TaskDaoTest.class
+com/conten/portal/QuickStartServer.class
+com/conten/portal/functional/gui/UserAdminFT.class
+com/conten/portal/functional/gui/RegisterFT.class
+com/conten/portal/data/UserData.class
+com/conten/portal/functional/BaseFunctionalTestCase.class
+com/conten/portal/service/account/AccountServiceTest.class
+com/conten/portal/functional/BaseSeleniumTestCase.class
+com/conten/portal/data/TaskData.class
+com/conten/portal/functional/gui/TaskGuiFT.class
+com/conten/portal/functional/gui/SecurityFT.class
+com/conten/portal/functional/gui/ProfileFT.class
+com/conten/portal/repository/JpaMappingTest.class
+com/conten/portal/functional/rest/TaskRestFT.class
+com/conten/portal/functional/rest/TaskRestFT$TaskList.class
