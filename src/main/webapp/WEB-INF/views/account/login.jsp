@@ -18,7 +18,7 @@
 
     <script>
         <shiro:user>
-            location.href="${ctx}/";
+            location.href="${ctx}/console";
         </shiro:user>
     </script>
 </head>

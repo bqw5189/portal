@@ -20,7 +20,7 @@
 	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
 		<property name="securityManager" ref="securityManager" />
 		<property name="loginUrl" value="/login" />
-		<property name="successUrl" value="/" />
+		<property name="successUrl" value="/console" />
 		<property name="filterChainDefinitions">
 			<value>
 				/login = authc
@@ -29,7 +29,9 @@
 				/api/** = anon
 				/register/** = anon
 				/admin/** = roles[admin]
-				/** = user
+				/console/** = roles[admin]
+				/home/** = anon
+				/** = anon
 			</value>
 		</property>
 	</bean>

@@ -30,6 +30,7 @@ public class QuickStartServer {
 		JettyFactory.setTldJarNames(server, TLD_JAR_NAMES);
 
 		try {
+            server.setStopAtShutdown(true);
 			server.start();
 
 			System.out.println("[INFO] Server running at http://localhost:" + PORT + CONTEXT);
@@ -40,7 +41,10 @@ public class QuickStartServer {
 				char c = (char) System.in.read();
 				if (c == '\n') {
 					JettyFactory.reloadContext(server);
-				}
+				}else if(c == 'q'){
+                    server.stop();
+                    System.exit(-1);
+                }
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
